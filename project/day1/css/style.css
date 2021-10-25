@@ -1,0 +1,111 @@
+#large_bg_img {
+    display: block;
+    height: 100%;
+    left: 0;
+    min-width: 930px;
+    overflow: hidden;
+    position: fixed;
+    top: 42px;
+    width: 100%;
+    z-index: 1;
+    background: black;
+}
+#large_bg_img_overlay {
+	background: url(../img/bg/fill.png) repeat;
+    display: block;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+}
+#large_bg_img img.big {
+    min-height: 750px;
+    min-width: 1190px;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0;
+}
+#main-content, #footer {
+    position: relative;
+z-index: 5;
+}
+html, body {height: 100%;}
+
+#wrap {min-height: 100%; }
+
+#main-content {
+	padding-bottom: 50px;}  /* must be same height as the footer */
+
+#footer {position: relative;
+	margin-top: -50px; /* negative value of footer height */
+	height: 50px;
+	clear:both;} 
+
+/*Opera Fix*/
+body:before {
+	content:"";
+	height:100%;
+	float:left;
+	width:0;
+	margin-top:-32767px;
+}
+.clearfix {
+        *zoom: 1; 
+    }
+    .clearfix:after {
+        content: " ";
+        display: block;
+        clear: both;
+        visibility: hidden;
+        font-size: 0;
+        height: 0;
+    }  
+.slider h1, .page-title {
+    font-family: 'Josefin Slab', serif;
+    color: #fff;
+    font-weight: 100;
+    line-height: 70px;
+    padding-bottom: 15px;
+    text-shadow: 0 1px 2px rgba(0,0,0, 0.8);
+}
+.container {
+    z-index: 200;
+}
+.navbar-fixed-top {
+    z-index: 200;
+     position: fixed;
+}
+.main-title {
+    font-family: 'Josefin Slab', sans-serif;
+    color: #fff;
+    font-size: 72px;
+    line-height: 78px;
+    font-weight: 300;
+    text-shadow: 0 1px 1px rgba(0,0,0, 1);
+}
+p {
+    color: #fff;
+}
+.menu-right {
+    color: #d8d5a3;
+    font-weight: bold;
+    font-style: italic;
+    text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.85);
+    margin-left: 16px;
+    padding-bottom: 10px;
+}
+.black-bar {
+    height: 12px;
+    background: url(../img/black-bar.png) repeat;
+    position: absolute;
+    width: 100%;
+    top: 52px;
+    left: 0;
+}
+#social a {
+   display:inline-block;
+    margin: 0 5px;
+    text-indent: -999999px;
+}
